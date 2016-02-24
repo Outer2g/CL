@@ -1,0 +1,129 @@
+digraph {
+
+	ordering=out;
+	ranksep=.4;
+	bgcolor="lightgrey"; node [shape=box, fixedsize=false, fontsize=12, fontname="Helvetica-bold", fontcolor="blue"
+		width=.25, height=.25, color="black", fillcolor="white", style="filled, solid, bold"];
+	edge [arrowsize=.5, color="black", style="bold"]
+
+  n0 [label="LIST_FUNCTIONS"];
+  n1 [label="func"];
+  n1 [label="func"];
+  n2 [label="factorial"];
+  n3 [label="PARAMS"];
+  n3 [label="PARAMS"];
+  n4 [label="n"];
+  n5 [label="LIST_INSTR"];
+  n5 [label="LIST_INSTR"];
+  n6 [label="if"];
+  n6 [label="if"];
+  n7 [label="<="];
+  n7 [label="<="];
+  n8 [label="["];
+  n8 [label="["];
+  n9 [label="n"];
+  n10 [label="+"];
+  n10 [label="+"];
+  n11 [label="i"];
+  n12 [label="1"];
+  n13 [label="1"];
+  n14 [label="LIST_INSTR"];
+  n14 [label="LIST_INSTR"];
+  n15 [label="return"];
+  n15 [label="return"];
+  n16 [label="1"];
+  n17 [label="return"];
+  n17 [label="return"];
+  n18 [label="*"];
+  n18 [label="*"];
+  n19 [label="n"];
+  n20 [label="FUNCALL"];
+  n20 [label="FUNCALL"];
+  n21 [label="factorial"];
+  n22 [label="ARGLIST"];
+  n22 [label="ARGLIST"];
+  n23 [label="-"];
+  n23 [label="-"];
+  n24 [label="n"];
+  n25 [label="1"];
+  n26 [label="func"];
+  n26 [label="func"];
+  n27 [label="main"];
+  n28 [label="PARAMS"];
+  n29 [label="LIST_INSTR"];
+  n29 [label="LIST_INSTR"];
+  n30 [label="write"];
+  n30 [label="write"];
+  n31 [label="\"Enter a number: \""];
+  n32 [label="read"];
+  n32 [label="read"];
+  n33 [label="i"];
+  n34 [label="write"];
+  n34 [label="write"];
+  n35 [label="\"The fa...al of \""];
+  n36 [label="write"];
+  n36 [label="write"];
+  n37 [label="i"];
+  n38 [label="write"];
+  n38 [label="write"];
+  n39 [label="\" is: \""];
+  n40 [label="write"];
+  n40 [label="write"];
+  n41 [label="FUNCALL"];
+  n41 [label="FUNCALL"];
+  n42 [label="factorial"];
+  n43 [label="ARGLIST"];
+  n43 [label="ARGLIST"];
+  n44 [label="i"];
+  n45 [label="write"];
+  n45 [label="write"];
+  n46 [label="\"%n\""];
+
+  n0 -> n1 // "LIST_FUNCTIONS" -> "func"
+  n1 -> n2 // "func" -> "factorial"
+  n1 -> n3 // "func" -> "PARAMS"
+  n3 -> n4 // "PARAMS" -> "n"
+  n1 -> n5 // "func" -> "LIST_INSTR"
+  n5 -> n6 // "LIST_INSTR" -> "if"
+  n6 -> n7 // "if" -> "<="
+  n7 -> n8 // "<=" -> "["
+  n8 -> n9 // "[" -> "n"
+  n8 -> n10 // "[" -> "+"
+  n10 -> n11 // "+" -> "i"
+  n10 -> n12 // "+" -> "1"
+  n7 -> n13 // "<=" -> "1"
+  n6 -> n14 // "if" -> "LIST_INSTR"
+  n14 -> n15 // "LIST_INSTR" -> "return"
+  n15 -> n16 // "return" -> "1"
+  n5 -> n17 // "LIST_INSTR" -> "return"
+  n17 -> n18 // "return" -> "*"
+  n18 -> n19 // "*" -> "n"
+  n18 -> n20 // "*" -> "FUNCALL"
+  n20 -> n21 // "FUNCALL" -> "factorial"
+  n20 -> n22 // "FUNCALL" -> "ARGLIST"
+  n22 -> n23 // "ARGLIST" -> "-"
+  n23 -> n24 // "-" -> "n"
+  n23 -> n25 // "-" -> "1"
+  n0 -> n26 // "LIST_FUNCTIONS" -> "func"
+  n26 -> n27 // "func" -> "main"
+  n26 -> n28 // "func" -> "PARAMS"
+  n26 -> n29 // "func" -> "LIST_INSTR"
+  n29 -> n30 // "LIST_INSTR" -> "write"
+  n30 -> n31 // "write" -> "\"Enter a number: \""
+  n29 -> n32 // "LIST_INSTR" -> "read"
+  n32 -> n33 // "read" -> "i"
+  n29 -> n34 // "LIST_INSTR" -> "write"
+  n34 -> n35 // "write" -> "\"The fa...al of \""
+  n29 -> n36 // "LIST_INSTR" -> "write"
+  n36 -> n37 // "write" -> "i"
+  n29 -> n38 // "LIST_INSTR" -> "write"
+  n38 -> n39 // "write" -> "\" is: \""
+  n29 -> n40 // "LIST_INSTR" -> "write"
+  n40 -> n41 // "write" -> "FUNCALL"
+  n41 -> n42 // "FUNCALL" -> "factorial"
+  n41 -> n43 // "FUNCALL" -> "ARGLIST"
+  n43 -> n44 // "ARGLIST" -> "i"
+  n29 -> n45 // "LIST_INSTR" -> "write"
+  n45 -> n46 // "write" -> "\"%n\""
+
+}
