@@ -44,6 +44,7 @@ tokens {
     BOOLEAN;    // Boolean atom (for Boolean constants "true" or "false")
     PVALUE;     // Parameter by value in the list of parameters
     PREF;       // Parameter by reference in the list of parameters
+    INDEX;	// Position to access
 }
 
 @header {
@@ -142,12 +143,15 @@ factor  :   (NOT^ | PLUS^ | MINUS^)? atom
 // Atom of the expressions (variables, integer and boolean literals).
 // An atom can also be a function call or another expression
 // in parenthesis
-atom    :   (ID ('['^ expr']'!)?)
+atom    :   ID
+	|   (ID mat) -> ^(INDEX mat)
         |   INT
         |   (b=TRUE | b=FALSE)  -> ^(BOOLEAN[$b,$b.text])
         |   funcall
         |   '('! expr ')'!
         ;
+mat	: '['! expr ']'!
+	;
 
 // A function call has a lits of arguments in parenthesis (possibly empty)
 funcall :   ID '(' expr_list? ')' -> ^(FUNCALL ID ^(ARGLIST expr_list?))
