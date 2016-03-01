@@ -38,16 +38,35 @@ package interp;
  */
 
 import parser.*;
+import java.util.ArrayList;
 
 public class Data {
     /** Types of data */
-    public enum Type {VOID, BOOLEAN, INTEGER;}
+    public enum Type {VOID, BOOLEAN, INTEGER,ARRAYINT,ARRAYBOOL;}
 
     /** Type of data*/
     private Type type;
 
     /** Value of the data */
     private int value; 
+    
+    /**Values for arrays*/
+    private ArrayList<Integer> arrayValues;
+    
+    /**Constructor for Arrays**/
+    Data(int position,int v,int type){
+	arrayValues = new ArrayList<Integer>();
+      if (type == 0 ){
+	this.type = Type.ARRAYINT;
+	for(int i = 0; i<position-1;++i) arrayValues.add(0);
+	arrayValues.add(v);
+      }
+      else {
+	this.type = Type.ARRAYBOOL;
+	for(int i = 0; i<position-1;++i) arrayValues.add(0);
+	arrayValues.add(v);
+      }
+    }
 
     /** Constructor for integers */
     Data(int v) { type = Type.INTEGER; value = v; }
@@ -59,8 +78,41 @@ public class Data {
     Data() {type = Type.VOID; }
 
     /** Copy constructor */
-    Data(Data d) { type = d.type; value = d.value; }
+    Data(Data d) { type = d.type; value = d.value; arrayValues=d.arrayValues;}
 
+    /**set position value*/
+    public void setPosValue(int position,Integer v){
+      if (type == Type.ARRAYINT){
+	if (position<arrayValues.size()) arrayValues.set(position,v);
+	else{
+	  for(int i = arrayValues.size()-1;i<position;++i) arrayValues.add(0);
+	  arrayValues.add(v);
+	}
+      }
+      else{
+	arrayValues = new ArrayList<Integer>();
+	this.type = Type.ARRAYINT;
+	for(int i = 0; i<position-1;++i) arrayValues.add(0);
+	arrayValues.add(v);
+      }
+    }
+    public void setPosValue(int position,Boolean v){
+      if (type != Type.ARRAYINT){
+	if (position<arrayValues.size()) arrayValues.set(position,v ? 1 : 0);
+	else{
+	  for(int i = arrayValues.size()-1;i<position;++i) arrayValues.add(0);
+	  arrayValues.add(v ? 1 : 0);
+	}
+      }
+      else{
+	arrayValues = new ArrayList<Integer>();
+	
+	this.type = Type.ARRAYBOOL;
+	for(int i = 0; i<position-1;++i) arrayValues.add(0);
+	arrayValues.add(v ? 1:0);
+      }
+    }
+    
     /** Returns the type of data */
     public Type getType() { return type; }
 
