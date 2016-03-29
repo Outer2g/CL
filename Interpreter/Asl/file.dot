@@ -1,0 +1,74 @@
+digraph {
+
+	ordering=out;
+	ranksep=.4;
+	bgcolor="lightgrey"; node [shape=box, fixedsize=false, fontsize=12, fontname="Helvetica-bold", fontcolor="blue"
+		width=.25, height=.25, color="black", fillcolor="white", style="filled, solid, bold"];
+	edge [arrowsize=.5, color="black", style="bold"]
+
+  n0 [label="LIST_FUNCTIONS"];
+  n1 [label="func"];
+  n1 [label="func"];
+  n2 [label="main"];
+  n3 [label="PARAMS"];
+  n4 [label="LIST_INSTR"];
+  n4 [label="LIST_INSTR"];
+  n5 [label="write"];
+  n5 [label="write"];
+  n6 [label="\"Enter a number: \""];
+  n7 [label="read"];
+  n7 [label="read"];
+  n8 [label="i"];
+  n9 [label=":="];
+  n9 [label=":="];
+  n10 [label="INDEX"];
+  n10 [label="INDEX"];
+  n11 [label="i"];
+  n11 [label="i"];
+  n12 [label="n"];
+  n13 [label="n"];
+  n14 [label="n"];
+  n15 [label="i"];
+  n16 [label="write"];
+  n16 [label="write"];
+  n17 [label="\"number...rray: \""];
+  n18 [label="write"];
+  n18 [label="write"];
+  n19 [label="INDEX"];
+  n19 [label="INDEX"];
+  n20 [label="4"];
+  n20 [label="4"];
+  n21 [label="n"];
+  n22 [label="n"];
+  n23 [label="n"];
+  n24 [label="write"];
+  n24 [label="write"];
+  n25 [label="\"%n\""];
+
+  n0 -> n1 // "LIST_FUNCTIONS" -> "func"
+  n1 -> n2 // "func" -> "main"
+  n1 -> n3 // "func" -> "PARAMS"
+  n1 -> n4 // "func" -> "LIST_INSTR"
+  n4 -> n5 // "LIST_INSTR" -> "write"
+  n5 -> n6 // "write" -> "\"Enter a number: \""
+  n4 -> n7 // "LIST_INSTR" -> "read"
+  n7 -> n8 // "read" -> "i"
+  n4 -> n9 // "LIST_INSTR" -> ":="
+  n9 -> n10 // ":=" -> "INDEX"
+  n10 -> n11 // "INDEX" -> "i"
+  n11 -> n12 // "i" -> "n"
+  n11 -> n13 // "i" -> "n"
+  n10 -> n14 // "INDEX" -> "n"
+  n9 -> n15 // ":=" -> "i"
+  n4 -> n16 // "LIST_INSTR" -> "write"
+  n16 -> n17 // "write" -> "\"number...rray: \""
+  n4 -> n18 // "LIST_INSTR" -> "write"
+  n18 -> n19 // "write" -> "INDEX"
+  n19 -> n20 // "INDEX" -> "4"
+  n20 -> n21 // "4" -> "n"
+  n20 -> n22 // "4" -> "n"
+  n19 -> n23 // "INDEX" -> "n"
+  n4 -> n24 // "LIST_INSTR" -> "write"
+  n24 -> n25 // "write" -> "\"%n\""
+
+}

@@ -83,16 +83,16 @@ public class Data {
     /**set position value*/
     public void setPosValue(int position,Integer v){
       if (type == Type.ARRAYINT){
-	if (position<arrayValues.size()) arrayValues.set(position,v);
+	if (position < arrayValues.size()) arrayValues.set(position,v);
 	else{
-	  for(int i = arrayValues.size()-1;i<position;++i) arrayValues.add(0);
+	  for(int i = arrayValues.size()-1; i < position; ++i) arrayValues.add(0);
 	  arrayValues.add(v);
 	}
       }
       else{
 	arrayValues = new ArrayList<Integer>();
 	this.type = Type.ARRAYINT;
-	for(int i = 0; i<position-1;++i) arrayValues.add(0);
+	for(int i = 0; i < position-1; ++i) arrayValues.add(0);
 	arrayValues.add(v);
       }
     }

@@ -98,7 +98,7 @@ instruction
         ;
 
 // Assignment
-assign	:	ID eq=EQUAL expr -> ^(ASSIGN[$eq,":="] ID expr)
+assign	:	mat eq=EQUAL expr -> ^(ASSIGN[$eq,":="] mat expr)
         ;
 
 // if-then-else (else is optional)
@@ -114,7 +114,7 @@ return_stmt	:	RETURN^ expr?
         ;
 
 // Read a variable
-read	:	READ^ ID
+read	:	READ^ mat
         ;
 
 // Write an expression or a string
@@ -143,15 +143,17 @@ factor  :   (NOT^ | PLUS^ | MINUS^)? atom
 // Atom of the expressions (variables, integer and boolean literals).
 // An atom can also be a function call or another expression
 // in parenthesis
-atom    :   ID
-	|   (ID mat) -> ^(INDEX mat)
+atom    :   mat
         |   INT
         |   (b=TRUE | b=FALSE)  -> ^(BOOLEAN[$b,$b.text])
         |   funcall
         |   '('! expr ')'!
         ;
-mat	: '['! expr ']'!
-	;
+//mat eq=EQUAL expr -> ^(ASSIGN[$eq,":="] mat expr)
+mat 	: ID | mat2
+		;
+mat2	: ID LCORCH expr RCORCH -> ^(INDEX ^(expr ID ID) ID) 
+		;
 
 // A function call has a lits of arguments in parenthesis (possibly empty)
 funcall :   ID '(' expr_list? ')' -> ^(FUNCALL ID ^(ARGLIST expr_list?))
@@ -163,6 +165,8 @@ expr_list:  expr (','! expr)*
 
 // Basic tokens
 EQUAL	: '=' ;
+LCORCH : '[';
+RCORCH : ']';
 NOT_EQUAL: '!=' ;
 LT	    : '<' ;
 LE	    : '<=';
