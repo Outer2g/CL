@@ -1,1 +1,0 @@
-(LIST_FUNCTIONS (func factorial (PARAMS n) (LIST_INSTR (if (<= (INDEX (+ i 1)) 1) (LIST_INSTR (return 1))) (return (* n (FUNCALL factorial (ARGLIST (- n 1))))))) (func main PARAMS (LIST_INSTR (write "Enter a number: ") (read i) (write "The factorial of ") (write i) (write " is: ") (write (FUNCALL factorial (ARGLIST i))) (write "%n"))))

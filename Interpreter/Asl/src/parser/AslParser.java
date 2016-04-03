@@ -1,4 +1,4 @@
-// $ANTLR 3.4 /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g 2016-03-29 09:52:04
+// $ANTLR 3.4 /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g 2016-04-03 13:12:20
 
 package parser;
 import interp.AslTree;
@@ -121,7 +121,7 @@ public TreeAdaptor getTreeAdaptor() {
     return adaptor;
 }
     public String[] getTokenNames() { return AslParser.tokenNames; }
-    public String getGrammarFileName() { return "/home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g"; }
+    public String getGrammarFileName() { return "/home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g"; }
 
 
     public static class prog_return extends ParserRuleReturnScope {
@@ -131,7 +131,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "prog"
-    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:61:1: prog : ( func )+ EOF -> ^( LIST_FUNCTIONS ( func )+ ) ;
+    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:61:1: prog : ( func )+ EOF -> ^( LIST_FUNCTIONS ( func )+ ) ;
     public final AslParser.prog_return prog() throws RecognitionException {
         AslParser.prog_return retval = new AslParser.prog_return();
         retval.start = input.LT(1);
@@ -147,10 +147,10 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_EOF=new RewriteRuleTokenStream(adaptor,"token EOF");
         RewriteRuleSubtreeStream stream_func=new RewriteRuleSubtreeStream(adaptor,"rule func");
         try {
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:61:6: ( ( func )+ EOF -> ^( LIST_FUNCTIONS ( func )+ ) )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:61:8: ( func )+ EOF
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:61:6: ( ( func )+ EOF -> ^( LIST_FUNCTIONS ( func )+ ) )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:61:8: ( func )+ EOF
             {
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:61:8: ( func )+
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:61:8: ( func )+
             int cnt1=0;
             loop1:
             do {
@@ -164,7 +164,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt1) {
             	case 1 :
-            	    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:61:8: func
+            	    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:61:8: func
             	    {
             	    pushFollow(FOLLOW_func_in_prog171);
             	    func1=func();
@@ -203,7 +203,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (AslTree)adaptor.nil();
             // 61:18: -> ^( LIST_FUNCTIONS ( func )+ )
             {
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:61:21: ^( LIST_FUNCTIONS ( func )+ )
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:61:21: ^( LIST_FUNCTIONS ( func )+ )
                 {
                 AslTree root_1 = (AslTree)adaptor.nil();
                 root_1 = (AslTree)adaptor.becomeRoot(
@@ -258,7 +258,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "func"
-    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:65:1: func : FUNC ^ ID params block_instructions ENDFUNC !;
+    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:65:1: func : FUNC ^ ID params block_instructions ENDFUNC !;
     public final AslParser.func_return func() throws RecognitionException {
         AslParser.func_return retval = new AslParser.func_return();
         retval.start = input.LT(1);
@@ -279,8 +279,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree ENDFUNC7_tree=null;
 
         try {
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:65:6: ( FUNC ^ ID params block_instructions ENDFUNC !)
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:65:8: FUNC ^ ID params block_instructions ENDFUNC !
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:65:6: ( FUNC ^ ID params block_instructions ENDFUNC !)
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:65:8: FUNC ^ ID params block_instructions ENDFUNC !
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -346,7 +346,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "params"
-    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:69:1: params : '(' ( paramlist )? ')' -> ^( PARAMS ( paramlist )? ) ;
+    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:69:1: params : '(' ( paramlist )? ')' -> ^( PARAMS ( paramlist )? ) ;
     public final AslParser.params_return params() throws RecognitionException {
         AslParser.params_return retval = new AslParser.params_return();
         retval.start = input.LT(1);
@@ -365,14 +365,14 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_52=new RewriteRuleTokenStream(adaptor,"token 52");
         RewriteRuleSubtreeStream stream_paramlist=new RewriteRuleSubtreeStream(adaptor,"rule paramlist");
         try {
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:69:8: ( '(' ( paramlist )? ')' -> ^( PARAMS ( paramlist )? ) )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:69:10: '(' ( paramlist )? ')'
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:69:8: ( '(' ( paramlist )? ')' -> ^( PARAMS ( paramlist )? ) )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:69:10: '(' ( paramlist )? ')'
             {
             char_literal8=(Token)match(input,51,FOLLOW_51_in_params241);  
             stream_51.add(char_literal8);
 
 
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:69:14: ( paramlist )?
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:69:14: ( paramlist )?
             int alt2=2;
             int LA2_0 = input.LA(1);
 
@@ -381,7 +381,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt2) {
                 case 1 :
-                    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:69:14: paramlist
+                    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:69:14: paramlist
                     {
                     pushFollow(FOLLOW_paramlist_in_params243);
                     paramlist9=paramlist();
@@ -413,14 +413,14 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (AslTree)adaptor.nil();
             // 69:29: -> ^( PARAMS ( paramlist )? )
             {
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:69:32: ^( PARAMS ( paramlist )? )
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:69:32: ^( PARAMS ( paramlist )? )
                 {
                 AslTree root_1 = (AslTree)adaptor.nil();
                 root_1 = (AslTree)adaptor.becomeRoot(
                 (AslTree)adaptor.create(PARAMS, "PARAMS")
                 , root_1);
 
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:69:41: ( paramlist )?
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:69:41: ( paramlist )?
                 if ( stream_paramlist.hasNext() ) {
                     adaptor.addChild(root_1, stream_paramlist.nextTree());
 
@@ -466,7 +466,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "paramlist"
-    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:73:1: paramlist : param ( ',' ! param )* ;
+    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:73:1: paramlist : param ( ',' ! param )* ;
     public final AslParser.paramlist_return paramlist() throws RecognitionException {
         AslParser.paramlist_return retval = new AslParser.paramlist_return();
         retval.start = input.LT(1);
@@ -483,8 +483,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree char_literal12_tree=null;
 
         try {
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:73:10: ( param ( ',' ! param )* )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:73:12: param ( ',' ! param )*
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:73:10: ( param ( ',' ! param )* )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:73:12: param ( ',' ! param )*
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -496,7 +496,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             adaptor.addChild(root_0, param11.getTree());
 
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:73:18: ( ',' ! param )*
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:73:18: ( ',' ! param )*
             loop3:
             do {
                 int alt3=2;
@@ -509,7 +509,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt3) {
             	case 1 :
-            	    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:73:19: ',' ! param
+            	    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:73:19: ',' ! param
             	    {
             	    char_literal12=(Token)match(input,53,FOLLOW_53_in_paramlist275); 
 
@@ -560,7 +560,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "param"
-    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:78:1: param : ( '&' id= ID -> ^( PREF[$id,$id.text] ) |id= ID -> ^( PVALUE[$id,$id.text] ) );
+    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:78:1: param : ( '&' id= ID -> ^( PREF[$id,$id.text] ) |id= ID -> ^( PVALUE[$id,$id.text] ) );
     public final AslParser.param_return param() throws RecognitionException {
         AslParser.param_return retval = new AslParser.param_return();
         retval.start = input.LT(1);
@@ -577,7 +577,7 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_ID=new RewriteRuleTokenStream(adaptor,"token ID");
 
         try {
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:78:9: ( '&' id= ID -> ^( PREF[$id,$id.text] ) |id= ID -> ^( PVALUE[$id,$id.text] ) )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:78:9: ( '&' id= ID -> ^( PREF[$id,$id.text] ) |id= ID -> ^( PVALUE[$id,$id.text] ) )
             int alt4=2;
             int LA4_0 = input.LA(1);
 
@@ -596,7 +596,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt4) {
                 case 1 :
-                    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:78:13: '&' id= ID
+                    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:78:13: '&' id= ID
                     {
                     char_literal14=(Token)match(input,50,FOLLOW_50_in_param303);  
                     stream_50.add(char_literal14);
@@ -619,7 +619,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (AslTree)adaptor.nil();
                     // 78:23: -> ^( PREF[$id,$id.text] )
                     {
-                        // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:78:26: ^( PREF[$id,$id.text] )
+                        // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:78:26: ^( PREF[$id,$id.text] )
                         {
                         AslTree root_1 = (AslTree)adaptor.nil();
                         root_1 = (AslTree)adaptor.becomeRoot(
@@ -637,7 +637,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:79:13: id= ID
+                    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:79:13: id= ID
                     {
                     id=(Token)match(input,ID,FOLLOW_ID_in_param330);  
                     stream_ID.add(id);
@@ -656,7 +656,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (AslTree)adaptor.nil();
                     // 79:19: -> ^( PVALUE[$id,$id.text] )
                     {
-                        // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:79:22: ^( PVALUE[$id,$id.text] )
+                        // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:79:22: ^( PVALUE[$id,$id.text] )
                         {
                         AslTree root_1 = (AslTree)adaptor.nil();
                         root_1 = (AslTree)adaptor.becomeRoot(
@@ -704,7 +704,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "block_instructions"
-    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:83:1: block_instructions : instruction ( ';' instruction )* -> ^( LIST_INSTR ( instruction )+ ) ;
+    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:83:1: block_instructions : instruction ( ';' instruction )* -> ^( LIST_INSTR ( instruction )+ ) ;
     public final AslParser.block_instructions_return block_instructions() throws RecognitionException {
         AslParser.block_instructions_return retval = new AslParser.block_instructions_return();
         retval.start = input.LT(1);
@@ -722,8 +722,8 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_54=new RewriteRuleTokenStream(adaptor,"token 54");
         RewriteRuleSubtreeStream stream_instruction=new RewriteRuleSubtreeStream(adaptor,"rule instruction");
         try {
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:84:9: ( instruction ( ';' instruction )* -> ^( LIST_INSTR ( instruction )+ ) )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:84:12: instruction ( ';' instruction )*
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:84:9: ( instruction ( ';' instruction )* -> ^( LIST_INSTR ( instruction )+ ) )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:84:12: instruction ( ';' instruction )*
             {
             pushFollow(FOLLOW_instruction_in_block_instructions364);
             instruction15=instruction();
@@ -732,7 +732,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             stream_instruction.add(instruction15.getTree());
 
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:84:24: ( ';' instruction )*
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:84:24: ( ';' instruction )*
             loop5:
             do {
                 int alt5=2;
@@ -745,7 +745,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt5) {
             	case 1 :
-            	    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:84:25: ';' instruction
+            	    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:84:25: ';' instruction
             	    {
             	    char_literal16=(Token)match(input,54,FOLLOW_54_in_block_instructions367);  
             	    stream_54.add(char_literal16);
@@ -780,7 +780,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (AslTree)adaptor.nil();
             // 85:13: -> ^( LIST_INSTR ( instruction )+ )
             {
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:85:16: ^( LIST_INSTR ( instruction )+ )
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:85:16: ^( LIST_INSTR ( instruction )+ )
                 {
                 AslTree root_1 = (AslTree)adaptor.nil();
                 root_1 = (AslTree)adaptor.becomeRoot(
@@ -835,7 +835,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "instruction"
-    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:89:1: instruction : ( assign | ite_stmt | while_stmt | funcall | return_stmt | read | write |);
+    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:89:1: instruction : ( assign | ite_stmt | while_stmt | funcall | return_stmt | read | write |);
     public final AslParser.instruction_return instruction() throws RecognitionException {
         AslParser.instruction_return retval = new AslParser.instruction_return();
         retval.start = input.LT(1);
@@ -860,7 +860,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
         try {
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:90:9: ( assign | ite_stmt | while_stmt | funcall | return_stmt | read | write |)
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:90:9: ( assign | ite_stmt | while_stmt | funcall | return_stmt | read | write |)
             int alt6=8;
             switch ( input.LA(1) ) {
             case ID:
@@ -926,7 +926,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt6) {
                 case 1 :
-                    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:90:11: assign
+                    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:90:11: assign
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -941,7 +941,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:91:11: ite_stmt
+                    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:91:11: ite_stmt
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -956,7 +956,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:92:11: while_stmt
+                    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:92:11: while_stmt
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -971,7 +971,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 4 :
-                    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:93:13: funcall
+                    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:93:13: funcall
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -986,7 +986,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 5 :
-                    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:94:11: return_stmt
+                    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:94:11: return_stmt
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -1001,7 +1001,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 6 :
-                    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:95:11: read
+                    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:95:11: read
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -1016,7 +1016,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 7 :
-                    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:96:12: write
+                    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:96:12: write
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -1031,7 +1031,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 8 :
-                    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:98:9: 
+                    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:98:9: 
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -1069,7 +1069,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "assign"
-    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:101:1: assign : mat eq= EQUAL expr -> ^( ASSIGN[$eq,\":=\"] mat expr ) ;
+    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:101:1: assign : mat eq= EQUAL expr -> ^( ASSIGN[$eq,\":=\"] mat expr ) ;
     public final AslParser.assign_return assign() throws RecognitionException {
         AslParser.assign_return retval = new AslParser.assign_return();
         retval.start = input.LT(1);
@@ -1088,8 +1088,8 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_mat=new RewriteRuleSubtreeStream(adaptor,"rule mat");
         RewriteRuleSubtreeStream stream_expr=new RewriteRuleSubtreeStream(adaptor,"rule expr");
         try {
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:101:8: ( mat eq= EQUAL expr -> ^( ASSIGN[$eq,\":=\"] mat expr ) )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:101:10: mat eq= EQUAL expr
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:101:8: ( mat eq= EQUAL expr -> ^( ASSIGN[$eq,\":=\"] mat expr ) )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:101:10: mat eq= EQUAL expr
             {
             pushFollow(FOLLOW_mat_in_assign601);
             mat25=mat();
@@ -1110,7 +1110,7 @@ public TreeAdaptor getTreeAdaptor() {
             stream_expr.add(expr26.getTree());
 
             // AST REWRITE
-            // elements: mat, expr
+            // elements: expr, mat
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -1122,7 +1122,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (AslTree)adaptor.nil();
             // 101:28: -> ^( ASSIGN[$eq,\":=\"] mat expr )
             {
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:101:31: ^( ASSIGN[$eq,\":=\"] mat expr )
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:101:31: ^( ASSIGN[$eq,\":=\"] mat expr )
                 {
                 AslTree root_1 = (AslTree)adaptor.nil();
                 root_1 = (AslTree)adaptor.becomeRoot(
@@ -1172,7 +1172,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "ite_stmt"
-    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:105:1: ite_stmt : IF ^ expr THEN ! block_instructions ( ELSE ! block_instructions )? ENDIF !;
+    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:105:1: ite_stmt : IF ^ expr THEN ! block_instructions ( ELSE ! block_instructions )? ENDIF !;
     public final AslParser.ite_stmt_return ite_stmt() throws RecognitionException {
         AslParser.ite_stmt_return retval = new AslParser.ite_stmt_return();
         retval.start = input.LT(1);
@@ -1197,8 +1197,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree ENDIF33_tree=null;
 
         try {
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:105:10: ( IF ^ expr THEN ! block_instructions ( ELSE ! block_instructions )? ENDIF !)
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:105:12: IF ^ expr THEN ! block_instructions ( ELSE ! block_instructions )? ENDIF !
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:105:10: ( IF ^ expr THEN ! block_instructions ( ELSE ! block_instructions )? ENDIF !)
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:105:12: IF ^ expr THEN ! block_instructions ( ELSE ! block_instructions )? ENDIF !
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -1226,7 +1226,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             adaptor.addChild(root_0, block_instructions30.getTree());
 
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:105:46: ( ELSE ! block_instructions )?
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:105:46: ( ELSE ! block_instructions )?
             int alt7=2;
             int LA7_0 = input.LA(1);
 
@@ -1235,7 +1235,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt7) {
                 case 1 :
-                    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:105:47: ELSE ! block_instructions
+                    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:105:47: ELSE ! block_instructions
                     {
                     ELSE31=(Token)match(input,ELSE,FOLLOW_ELSE_in_ite_stmt647); 
 
@@ -1285,7 +1285,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "while_stmt"
-    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:109:1: while_stmt : WHILE ^ expr DO ! block_instructions ENDWHILE !;
+    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:109:1: while_stmt : WHILE ^ expr DO ! block_instructions ENDWHILE !;
     public final AslParser.while_stmt_return while_stmt() throws RecognitionException {
         AslParser.while_stmt_return retval = new AslParser.while_stmt_return();
         retval.start = input.LT(1);
@@ -1306,8 +1306,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree ENDWHILE38_tree=null;
 
         try {
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:109:12: ( WHILE ^ expr DO ! block_instructions ENDWHILE !)
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:109:14: WHILE ^ expr DO ! block_instructions ENDWHILE !
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:109:12: ( WHILE ^ expr DO ! block_instructions ENDWHILE !)
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:109:14: WHILE ^ expr DO ! block_instructions ENDWHILE !
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -1368,7 +1368,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "return_stmt"
-    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:113:1: return_stmt : RETURN ^ ( expr )? ;
+    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:113:1: return_stmt : RETURN ^ ( expr )? ;
     public final AslParser.return_stmt_return return_stmt() throws RecognitionException {
         AslParser.return_stmt_return retval = new AslParser.return_stmt_return();
         retval.start = input.LT(1);
@@ -1383,8 +1383,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree RETURN39_tree=null;
 
         try {
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:113:13: ( RETURN ^ ( expr )? )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:113:15: RETURN ^ ( expr )?
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:113:13: ( RETURN ^ ( expr )? )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:113:15: RETURN ^ ( expr )?
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -1396,7 +1396,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (AslTree)adaptor.becomeRoot(RETURN39_tree, root_0);
 
 
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:113:23: ( expr )?
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:113:23: ( expr )?
             int alt8=2;
             int LA8_0 = input.LA(1);
 
@@ -1405,7 +1405,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt8) {
                 case 1 :
-                    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:113:23: expr
+                    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:113:23: expr
                     {
                     pushFollow(FOLLOW_expr_in_return_stmt713);
                     expr40=expr();
@@ -1451,7 +1451,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "read"
-    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:117:1: read : READ ^ mat ;
+    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:117:1: read : READ ^ mat ;
     public final AslParser.read_return read() throws RecognitionException {
         AslParser.read_return retval = new AslParser.read_return();
         retval.start = input.LT(1);
@@ -1466,8 +1466,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree READ41_tree=null;
 
         try {
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:117:6: ( READ ^ mat )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:117:8: READ ^ mat
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:117:6: ( READ ^ mat )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:117:8: READ ^ mat
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -1517,7 +1517,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "write"
-    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:121:1: write : WRITE ^ ( expr | STRING ) ;
+    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:121:1: write : WRITE ^ ( expr | STRING ) ;
     public final AslParser.write_return write() throws RecognitionException {
         AslParser.write_return retval = new AslParser.write_return();
         retval.start = input.LT(1);
@@ -1534,8 +1534,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree STRING45_tree=null;
 
         try {
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:121:7: ( WRITE ^ ( expr | STRING ) )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:121:11: WRITE ^ ( expr | STRING )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:121:7: ( WRITE ^ ( expr | STRING ) )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:121:11: WRITE ^ ( expr | STRING )
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -1547,7 +1547,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (AslTree)adaptor.becomeRoot(WRITE43_tree, root_0);
 
 
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:121:18: ( expr | STRING )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:121:18: ( expr | STRING )
             int alt9=2;
             int LA9_0 = input.LA(1);
 
@@ -1566,7 +1566,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt9) {
                 case 1 :
-                    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:121:19: expr
+                    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:121:19: expr
                     {
                     pushFollow(FOLLOW_expr_in_write759);
                     expr44=expr();
@@ -1578,7 +1578,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:121:26: STRING
+                    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:121:26: STRING
                     {
                     STRING45=(Token)match(input,STRING,FOLLOW_STRING_in_write763); 
                     STRING45_tree = 
@@ -1624,7 +1624,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "expr"
-    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:125:1: expr : boolterm ( OR ^ boolterm )* ;
+    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:125:1: expr : boolterm ( OR ^ boolterm )* ;
     public final AslParser.expr_return expr() throws RecognitionException {
         AslParser.expr_return retval = new AslParser.expr_return();
         retval.start = input.LT(1);
@@ -1641,8 +1641,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree OR47_tree=null;
 
         try {
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:125:9: ( boolterm ( OR ^ boolterm )* )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:125:13: boolterm ( OR ^ boolterm )*
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:125:9: ( boolterm ( OR ^ boolterm )* )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:125:13: boolterm ( OR ^ boolterm )*
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -1654,7 +1654,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             adaptor.addChild(root_0, boolterm46.getTree());
 
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:125:22: ( OR ^ boolterm )*
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:125:22: ( OR ^ boolterm )*
             loop10:
             do {
                 int alt10=2;
@@ -1667,7 +1667,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt10) {
             	case 1 :
-            	    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:125:23: OR ^ boolterm
+            	    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:125:23: OR ^ boolterm
             	    {
             	    OR47=(Token)match(input,OR,FOLLOW_OR_in_expr791); 
             	    OR47_tree = 
@@ -1723,7 +1723,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "boolterm"
-    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:128:1: boolterm : boolfact ( AND ^ boolfact )* ;
+    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:128:1: boolterm : boolfact ( AND ^ boolfact )* ;
     public final AslParser.boolterm_return boolterm() throws RecognitionException {
         AslParser.boolterm_return retval = new AslParser.boolterm_return();
         retval.start = input.LT(1);
@@ -1740,8 +1740,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree AND50_tree=null;
 
         try {
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:128:9: ( boolfact ( AND ^ boolfact )* )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:128:13: boolfact ( AND ^ boolfact )*
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:128:9: ( boolfact ( AND ^ boolfact )* )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:128:13: boolfact ( AND ^ boolfact )*
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -1753,7 +1753,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             adaptor.addChild(root_0, boolfact49.getTree());
 
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:128:22: ( AND ^ boolfact )*
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:128:22: ( AND ^ boolfact )*
             loop11:
             do {
                 int alt11=2;
@@ -1766,7 +1766,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt11) {
             	case 1 :
-            	    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:128:23: AND ^ boolfact
+            	    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:128:23: AND ^ boolfact
             	    {
             	    AND50=(Token)match(input,AND,FOLLOW_AND_in_boolterm817); 
             	    AND50_tree = 
@@ -1822,7 +1822,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "boolfact"
-    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:131:1: boolfact : num_expr ( ( EQUAL ^| NOT_EQUAL ^| LT ^| LE ^| GT ^| GE ^) num_expr )? ;
+    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:131:1: boolfact : num_expr ( ( EQUAL ^| NOT_EQUAL ^| LT ^| LE ^| GT ^| GE ^) num_expr )? ;
     public final AslParser.boolfact_return boolfact() throws RecognitionException {
         AslParser.boolfact_return retval = new AslParser.boolfact_return();
         retval.start = input.LT(1);
@@ -1849,8 +1849,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree GE58_tree=null;
 
         try {
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:131:9: ( num_expr ( ( EQUAL ^| NOT_EQUAL ^| LT ^| LE ^| GT ^| GE ^) num_expr )? )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:131:13: num_expr ( ( EQUAL ^| NOT_EQUAL ^| LT ^| LE ^| GT ^| GE ^) num_expr )?
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:131:9: ( num_expr ( ( EQUAL ^| NOT_EQUAL ^| LT ^| LE ^| GT ^| GE ^) num_expr )? )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:131:13: num_expr ( ( EQUAL ^| NOT_EQUAL ^| LT ^| LE ^| GT ^| GE ^) num_expr )?
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -1862,7 +1862,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             adaptor.addChild(root_0, num_expr52.getTree());
 
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:131:22: ( ( EQUAL ^| NOT_EQUAL ^| LT ^| LE ^| GT ^| GE ^) num_expr )?
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:131:22: ( ( EQUAL ^| NOT_EQUAL ^| LT ^| LE ^| GT ^| GE ^) num_expr )?
             int alt13=2;
             int LA13_0 = input.LA(1);
 
@@ -1871,9 +1871,9 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt13) {
                 case 1 :
-                    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:131:23: ( EQUAL ^| NOT_EQUAL ^| LT ^| LE ^| GT ^| GE ^) num_expr
+                    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:131:23: ( EQUAL ^| NOT_EQUAL ^| LT ^| LE ^| GT ^| GE ^) num_expr
                     {
-                    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:131:23: ( EQUAL ^| NOT_EQUAL ^| LT ^| LE ^| GT ^| GE ^)
+                    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:131:23: ( EQUAL ^| NOT_EQUAL ^| LT ^| LE ^| GT ^| GE ^)
                     int alt12=6;
                     switch ( input.LA(1) ) {
                     case EQUAL:
@@ -1916,7 +1916,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                     switch (alt12) {
                         case 1 :
-                            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:131:24: EQUAL ^
+                            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:131:24: EQUAL ^
                             {
                             EQUAL53=(Token)match(input,EQUAL,FOLLOW_EQUAL_in_boolfact844); 
                             EQUAL53_tree = 
@@ -1928,7 +1928,7 @@ public TreeAdaptor getTreeAdaptor() {
                             }
                             break;
                         case 2 :
-                            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:131:33: NOT_EQUAL ^
+                            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:131:33: NOT_EQUAL ^
                             {
                             NOT_EQUAL54=(Token)match(input,NOT_EQUAL,FOLLOW_NOT_EQUAL_in_boolfact849); 
                             NOT_EQUAL54_tree = 
@@ -1940,7 +1940,7 @@ public TreeAdaptor getTreeAdaptor() {
                             }
                             break;
                         case 3 :
-                            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:131:46: LT ^
+                            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:131:46: LT ^
                             {
                             LT55=(Token)match(input,LT,FOLLOW_LT_in_boolfact854); 
                             LT55_tree = 
@@ -1952,7 +1952,7 @@ public TreeAdaptor getTreeAdaptor() {
                             }
                             break;
                         case 4 :
-                            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:131:52: LE ^
+                            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:131:52: LE ^
                             {
                             LE56=(Token)match(input,LE,FOLLOW_LE_in_boolfact859); 
                             LE56_tree = 
@@ -1964,7 +1964,7 @@ public TreeAdaptor getTreeAdaptor() {
                             }
                             break;
                         case 5 :
-                            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:131:58: GT ^
+                            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:131:58: GT ^
                             {
                             GT57=(Token)match(input,GT,FOLLOW_GT_in_boolfact864); 
                             GT57_tree = 
@@ -1976,7 +1976,7 @@ public TreeAdaptor getTreeAdaptor() {
                             }
                             break;
                         case 6 :
-                            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:131:64: GE ^
+                            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:131:64: GE ^
                             {
                             GE58=(Token)match(input,GE,FOLLOW_GE_in_boolfact869); 
                             GE58_tree = 
@@ -2035,7 +2035,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "num_expr"
-    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:134:1: num_expr : term ( ( PLUS ^| MINUS ^) term )* ;
+    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:134:1: num_expr : term ( ( PLUS ^| MINUS ^) term )* ;
     public final AslParser.num_expr_return num_expr() throws RecognitionException {
         AslParser.num_expr_return retval = new AslParser.num_expr_return();
         retval.start = input.LT(1);
@@ -2054,8 +2054,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree MINUS62_tree=null;
 
         try {
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:134:9: ( term ( ( PLUS ^| MINUS ^) term )* )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:134:13: term ( ( PLUS ^| MINUS ^) term )*
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:134:9: ( term ( ( PLUS ^| MINUS ^) term )* )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:134:13: term ( ( PLUS ^| MINUS ^) term )*
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -2067,7 +2067,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             adaptor.addChild(root_0, term60.getTree());
 
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:134:18: ( ( PLUS ^| MINUS ^) term )*
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:134:18: ( ( PLUS ^| MINUS ^) term )*
             loop15:
             do {
                 int alt15=2;
@@ -2080,9 +2080,9 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt15) {
             	case 1 :
-            	    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:134:20: ( PLUS ^| MINUS ^) term
+            	    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:134:20: ( PLUS ^| MINUS ^) term
             	    {
-            	    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:134:20: ( PLUS ^| MINUS ^)
+            	    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:134:20: ( PLUS ^| MINUS ^)
             	    int alt14=2;
             	    int LA14_0 = input.LA(1);
 
@@ -2101,7 +2101,7 @@ public TreeAdaptor getTreeAdaptor() {
             	    }
             	    switch (alt14) {
             	        case 1 :
-            	            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:134:21: PLUS ^
+            	            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:134:21: PLUS ^
             	            {
             	            PLUS61=(Token)match(input,PLUS,FOLLOW_PLUS_in_num_expr898); 
             	            PLUS61_tree = 
@@ -2113,7 +2113,7 @@ public TreeAdaptor getTreeAdaptor() {
             	            }
             	            break;
             	        case 2 :
-            	            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:134:29: MINUS ^
+            	            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:134:29: MINUS ^
             	            {
             	            MINUS62=(Token)match(input,MINUS,FOLLOW_MINUS_in_num_expr903); 
             	            MINUS62_tree = 
@@ -2175,7 +2175,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "term"
-    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:137:1: term : factor ( ( MUL ^| DIV ^| MOD ^) factor )* ;
+    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:137:1: term : factor ( ( MUL ^| DIV ^| MOD ^) factor )* ;
     public final AslParser.term_return term() throws RecognitionException {
         AslParser.term_return retval = new AslParser.term_return();
         retval.start = input.LT(1);
@@ -2196,8 +2196,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree MOD67_tree=null;
 
         try {
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:137:9: ( factor ( ( MUL ^| DIV ^| MOD ^) factor )* )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:137:13: factor ( ( MUL ^| DIV ^| MOD ^) factor )*
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:137:9: ( factor ( ( MUL ^| DIV ^| MOD ^) factor )* )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:137:13: factor ( ( MUL ^| DIV ^| MOD ^) factor )*
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -2209,7 +2209,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             adaptor.addChild(root_0, factor64.getTree());
 
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:137:20: ( ( MUL ^| DIV ^| MOD ^) factor )*
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:137:20: ( ( MUL ^| DIV ^| MOD ^) factor )*
             loop17:
             do {
                 int alt17=2;
@@ -2222,9 +2222,9 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt17) {
             	case 1 :
-            	    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:137:22: ( MUL ^| DIV ^| MOD ^) factor
+            	    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:137:22: ( MUL ^| DIV ^| MOD ^) factor
             	    {
-            	    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:137:22: ( MUL ^| DIV ^| MOD ^)
+            	    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:137:22: ( MUL ^| DIV ^| MOD ^)
             	    int alt16=3;
             	    switch ( input.LA(1) ) {
             	    case MUL:
@@ -2252,7 +2252,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             	    switch (alt16) {
             	        case 1 :
-            	            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:137:23: MUL ^
+            	            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:137:23: MUL ^
             	            {
             	            MUL65=(Token)match(input,MUL,FOLLOW_MUL_in_term936); 
             	            MUL65_tree = 
@@ -2264,7 +2264,7 @@ public TreeAdaptor getTreeAdaptor() {
             	            }
             	            break;
             	        case 2 :
-            	            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:137:30: DIV ^
+            	            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:137:30: DIV ^
             	            {
             	            DIV66=(Token)match(input,DIV,FOLLOW_DIV_in_term941); 
             	            DIV66_tree = 
@@ -2276,7 +2276,7 @@ public TreeAdaptor getTreeAdaptor() {
             	            }
             	            break;
             	        case 3 :
-            	            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:137:37: MOD ^
+            	            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:137:37: MOD ^
             	            {
             	            MOD67=(Token)match(input,MOD,FOLLOW_MOD_in_term946); 
             	            MOD67_tree = 
@@ -2338,7 +2338,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "factor"
-    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:140:1: factor : ( NOT ^| PLUS ^| MINUS ^)? atom ;
+    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:140:1: factor : ( NOT ^| PLUS ^| MINUS ^)? atom ;
     public final AslParser.factor_return factor() throws RecognitionException {
         AslParser.factor_return retval = new AslParser.factor_return();
         retval.start = input.LT(1);
@@ -2357,13 +2357,13 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree MINUS71_tree=null;
 
         try {
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:140:9: ( ( NOT ^| PLUS ^| MINUS ^)? atom )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:140:13: ( NOT ^| PLUS ^| MINUS ^)? atom
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:140:9: ( ( NOT ^| PLUS ^| MINUS ^)? atom )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:140:13: ( NOT ^| PLUS ^| MINUS ^)? atom
             {
             root_0 = (AslTree)adaptor.nil();
 
 
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:140:13: ( NOT ^| PLUS ^| MINUS ^)?
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:140:13: ( NOT ^| PLUS ^| MINUS ^)?
             int alt18=4;
             switch ( input.LA(1) ) {
                 case NOT:
@@ -2385,7 +2385,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt18) {
                 case 1 :
-                    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:140:14: NOT ^
+                    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:140:14: NOT ^
                     {
                     NOT69=(Token)match(input,NOT,FOLLOW_NOT_in_factor973); 
                     NOT69_tree = 
@@ -2397,7 +2397,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:140:21: PLUS ^
+                    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:140:21: PLUS ^
                     {
                     PLUS70=(Token)match(input,PLUS,FOLLOW_PLUS_in_factor978); 
                     PLUS70_tree = 
@@ -2409,7 +2409,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:140:29: MINUS ^
+                    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:140:29: MINUS ^
                     {
                     MINUS71=(Token)match(input,MINUS,FOLLOW_MINUS_in_factor983); 
                     MINUS71_tree = 
@@ -2462,7 +2462,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "atom"
-    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:146:1: atom : ( mat | INT | (b= TRUE |b= FALSE ) -> ^( BOOLEAN[$b,$b.text] ) | funcall | '(' ! expr ')' !);
+    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:146:1: atom : ( mat | INT | (b= TRUE |b= FALSE ) -> ^( BOOLEAN[$b,$b.text] ) | funcall | '(' ! expr ')' !);
     public final AslParser.atom_return atom() throws RecognitionException {
         AslParser.atom_return retval = new AslParser.atom_return();
         retval.start = input.LT(1);
@@ -2489,7 +2489,7 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_FALSE=new RewriteRuleTokenStream(adaptor,"token FALSE");
 
         try {
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:146:9: ( mat | INT | (b= TRUE |b= FALSE ) -> ^( BOOLEAN[$b,$b.text] ) | funcall | '(' ! expr ')' !)
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:146:9: ( mat | INT | (b= TRUE |b= FALSE ) -> ^( BOOLEAN[$b,$b.text] ) | funcall | '(' ! expr ')' !)
             int alt20=5;
             switch ( input.LA(1) ) {
             case ID:
@@ -2537,7 +2537,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt20) {
                 case 1 :
-                    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:146:13: mat
+                    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:146:13: mat
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -2552,7 +2552,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:147:13: INT
+                    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:147:13: INT
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -2567,9 +2567,9 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:148:13: (b= TRUE |b= FALSE )
+                    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:148:13: (b= TRUE |b= FALSE )
                     {
-                    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:148:13: (b= TRUE |b= FALSE )
+                    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:148:13: (b= TRUE |b= FALSE )
                     int alt19=2;
                     int LA19_0 = input.LA(1);
 
@@ -2588,7 +2588,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     switch (alt19) {
                         case 1 :
-                            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:148:14: b= TRUE
+                            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:148:14: b= TRUE
                             {
                             b=(Token)match(input,TRUE,FOLLOW_TRUE_in_atom1044);  
                             stream_TRUE.add(b);
@@ -2597,7 +2597,7 @@ public TreeAdaptor getTreeAdaptor() {
                             }
                             break;
                         case 2 :
-                            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:148:23: b= FALSE
+                            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:148:23: b= FALSE
                             {
                             b=(Token)match(input,FALSE,FOLLOW_FALSE_in_atom1050);  
                             stream_FALSE.add(b);
@@ -2622,7 +2622,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (AslTree)adaptor.nil();
                     // 148:33: -> ^( BOOLEAN[$b,$b.text] )
                     {
-                        // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:148:36: ^( BOOLEAN[$b,$b.text] )
+                        // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:148:36: ^( BOOLEAN[$b,$b.text] )
                         {
                         AslTree root_1 = (AslTree)adaptor.nil();
                         root_1 = (AslTree)adaptor.becomeRoot(
@@ -2640,7 +2640,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 4 :
-                    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:149:13: funcall
+                    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:149:13: funcall
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -2655,7 +2655,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 5 :
-                    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:150:13: '(' ! expr ')' !
+                    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:150:13: '(' ! expr ')' !
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -2704,7 +2704,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "mat"
-    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:153:1: mat : ( ID | mat2 );
+    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:153:1: mat : ( ID | mat2 );
     public final AslParser.mat_return mat() throws RecognitionException {
         AslParser.mat_return retval = new AslParser.mat_return();
         retval.start = input.LT(1);
@@ -2719,7 +2719,7 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree ID79_tree=null;
 
         try {
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:153:6: ( ID | mat2 )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:153:6: ( ID | mat2 )
             int alt21=2;
             int LA21_0 = input.LA(1);
 
@@ -2749,7 +2749,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt21) {
                 case 1 :
-                    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:153:8: ID
+                    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:153:8: ID
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -2764,7 +2764,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:153:13: mat2
+                    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:153:13: mat2
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -2809,7 +2809,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "mat2"
-    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:155:1: mat2 : ID LCORCH expr RCORCH -> ^( INDEX ^( expr ID ID ) ID ) ;
+    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:155:1: mat2 : ID LCORCH expr RCORCH -> ^( INDEX ID expr ) ;
     public final AslParser.mat2_return mat2() throws RecognitionException {
         AslParser.mat2_return retval = new AslParser.mat2_return();
         retval.start = input.LT(1);
@@ -2831,8 +2831,8 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_RCORCH=new RewriteRuleTokenStream(adaptor,"token RCORCH");
         RewriteRuleSubtreeStream stream_expr=new RewriteRuleSubtreeStream(adaptor,"rule expr");
         try {
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:155:6: ( ID LCORCH expr RCORCH -> ^( INDEX ^( expr ID ID ) ID ) )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:155:8: ID LCORCH expr RCORCH
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:155:6: ( ID LCORCH expr RCORCH -> ^( INDEX ID expr ) )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:155:8: ID LCORCH expr RCORCH
             {
             ID81=(Token)match(input,ID,FOLLOW_ID_in_mat21125);  
             stream_ID.add(ID81);
@@ -2854,7 +2854,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             // AST REWRITE
-            // elements: ID, ID, expr, ID
+            // elements: ID, expr
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -2864,34 +2864,20 @@ public TreeAdaptor getTreeAdaptor() {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (AslTree)adaptor.nil();
-            // 155:30: -> ^( INDEX ^( expr ID ID ) ID )
+            // 155:30: -> ^( INDEX ID expr )
             {
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:155:33: ^( INDEX ^( expr ID ID ) ID )
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:155:33: ^( INDEX ID expr )
                 {
                 AslTree root_1 = (AslTree)adaptor.nil();
                 root_1 = (AslTree)adaptor.becomeRoot(
                 (AslTree)adaptor.create(INDEX, "INDEX")
                 , root_1);
 
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:155:41: ^( expr ID ID )
-                {
-                AslTree root_2 = (AslTree)adaptor.nil();
-                root_2 = (AslTree)adaptor.becomeRoot(stream_expr.nextNode(), root_2);
-
-                adaptor.addChild(root_2, 
-                stream_ID.nextNode()
-                );
-
-                adaptor.addChild(root_2, 
-                stream_ID.nextNode()
-                );
-
-                adaptor.addChild(root_1, root_2);
-                }
-
                 adaptor.addChild(root_1, 
                 stream_ID.nextNode()
                 );
+
+                adaptor.addChild(root_1, stream_expr.nextTree());
 
                 adaptor.addChild(root_0, root_1);
                 }
@@ -2932,7 +2918,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "funcall"
-    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:159:1: funcall : ID '(' ( expr_list )? ')' -> ^( FUNCALL ID ^( ARGLIST ( expr_list )? ) ) ;
+    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:158:1: funcall : ID '(' ( expr_list )? ')' -> ^( FUNCALL ID ^( ARGLIST ( expr_list )? ) ) ;
     public final AslParser.funcall_return funcall() throws RecognitionException {
         AslParser.funcall_return retval = new AslParser.funcall_return();
         retval.start = input.LT(1);
@@ -2954,18 +2940,18 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_52=new RewriteRuleTokenStream(adaptor,"token 52");
         RewriteRuleSubtreeStream stream_expr_list=new RewriteRuleSubtreeStream(adaptor,"rule expr_list");
         try {
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:159:9: ( ID '(' ( expr_list )? ')' -> ^( FUNCALL ID ^( ARGLIST ( expr_list )? ) ) )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:159:13: ID '(' ( expr_list )? ')'
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:158:9: ( ID '(' ( expr_list )? ')' -> ^( FUNCALL ID ^( ARGLIST ( expr_list )? ) ) )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:158:13: ID '(' ( expr_list )? ')'
             {
-            ID85=(Token)match(input,ID,FOLLOW_ID_in_funcall1162);  
+            ID85=(Token)match(input,ID,FOLLOW_ID_in_funcall1156);  
             stream_ID.add(ID85);
 
 
-            char_literal86=(Token)match(input,51,FOLLOW_51_in_funcall1164);  
+            char_literal86=(Token)match(input,51,FOLLOW_51_in_funcall1158);  
             stream_51.add(char_literal86);
 
 
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:159:20: ( expr_list )?
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:158:20: ( expr_list )?
             int alt22=2;
             int LA22_0 = input.LA(1);
 
@@ -2974,9 +2960,9 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt22) {
                 case 1 :
-                    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:159:20: expr_list
+                    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:158:20: expr_list
                     {
-                    pushFollow(FOLLOW_expr_list_in_funcall1166);
+                    pushFollow(FOLLOW_expr_list_in_funcall1160);
                     expr_list87=expr_list();
 
                     state._fsp--;
@@ -2989,7 +2975,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            char_literal88=(Token)match(input,52,FOLLOW_52_in_funcall1169);  
+            char_literal88=(Token)match(input,52,FOLLOW_52_in_funcall1163);  
             stream_52.add(char_literal88);
 
 
@@ -3004,9 +2990,9 @@ public TreeAdaptor getTreeAdaptor() {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (AslTree)adaptor.nil();
-            // 159:35: -> ^( FUNCALL ID ^( ARGLIST ( expr_list )? ) )
+            // 158:35: -> ^( FUNCALL ID ^( ARGLIST ( expr_list )? ) )
             {
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:159:38: ^( FUNCALL ID ^( ARGLIST ( expr_list )? ) )
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:158:38: ^( FUNCALL ID ^( ARGLIST ( expr_list )? ) )
                 {
                 AslTree root_1 = (AslTree)adaptor.nil();
                 root_1 = (AslTree)adaptor.becomeRoot(
@@ -3017,14 +3003,14 @@ public TreeAdaptor getTreeAdaptor() {
                 stream_ID.nextNode()
                 );
 
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:159:51: ^( ARGLIST ( expr_list )? )
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:158:51: ^( ARGLIST ( expr_list )? )
                 {
                 AslTree root_2 = (AslTree)adaptor.nil();
                 root_2 = (AslTree)adaptor.becomeRoot(
                 (AslTree)adaptor.create(ARGLIST, "ARGLIST")
                 , root_2);
 
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:159:61: ( expr_list )?
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:158:61: ( expr_list )?
                 if ( stream_expr_list.hasNext() ) {
                     adaptor.addChild(root_2, stream_expr_list.nextTree());
 
@@ -3073,7 +3059,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "expr_list"
-    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:163:1: expr_list : expr ( ',' ! expr )* ;
+    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:162:1: expr_list : expr ( ',' ! expr )* ;
     public final AslParser.expr_list_return expr_list() throws RecognitionException {
         AslParser.expr_list_return retval = new AslParser.expr_list_return();
         retval.start = input.LT(1);
@@ -3090,20 +3076,20 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree char_literal90_tree=null;
 
         try {
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:163:10: ( expr ( ',' ! expr )* )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:163:13: expr ( ',' ! expr )*
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:162:10: ( expr ( ',' ! expr )* )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:162:13: expr ( ',' ! expr )*
             {
             root_0 = (AslTree)adaptor.nil();
 
 
-            pushFollow(FOLLOW_expr_in_expr_list1202);
+            pushFollow(FOLLOW_expr_in_expr_list1196);
             expr89=expr();
 
             state._fsp--;
 
             adaptor.addChild(root_0, expr89.getTree());
 
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:163:18: ( ',' ! expr )*
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:162:18: ( ',' ! expr )*
             loop23:
             do {
                 int alt23=2;
@@ -3116,11 +3102,11 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt23) {
             	case 1 :
-            	    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:163:19: ',' ! expr
+            	    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:162:19: ',' ! expr
             	    {
-            	    char_literal90=(Token)match(input,53,FOLLOW_53_in_expr_list1205); 
+            	    char_literal90=(Token)match(input,53,FOLLOW_53_in_expr_list1199); 
 
-            	    pushFollow(FOLLOW_expr_in_expr_list1208);
+            	    pushFollow(FOLLOW_expr_in_expr_list1202);
             	    expr91=expr();
 
             	    state._fsp--;
@@ -3253,12 +3239,12 @@ public TreeAdaptor getTreeAdaptor() {
     public static final BitSet FOLLOW_LCORCH_in_mat21127 = new BitSet(new long[]{0x0008404482420000L});
     public static final BitSet FOLLOW_expr_in_mat21129 = new BitSet(new long[]{0x0000020000000000L});
     public static final BitSet FOLLOW_RCORCH_in_mat21131 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_in_funcall1162 = new BitSet(new long[]{0x0008000000000000L});
-    public static final BitSet FOLLOW_51_in_funcall1164 = new BitSet(new long[]{0x0018404482420000L});
-    public static final BitSet FOLLOW_expr_list_in_funcall1166 = new BitSet(new long[]{0x0010000000000000L});
-    public static final BitSet FOLLOW_52_in_funcall1169 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ID_in_funcall1156 = new BitSet(new long[]{0x0008000000000000L});
+    public static final BitSet FOLLOW_51_in_funcall1158 = new BitSet(new long[]{0x0018404482420000L});
+    public static final BitSet FOLLOW_expr_list_in_funcall1160 = new BitSet(new long[]{0x0010000000000000L});
+    public static final BitSet FOLLOW_52_in_funcall1163 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_expr_in_expr_list1196 = new BitSet(new long[]{0x0020000000000002L});
+    public static final BitSet FOLLOW_53_in_expr_list1199 = new BitSet(new long[]{0x0008404482420000L});
     public static final BitSet FOLLOW_expr_in_expr_list1202 = new BitSet(new long[]{0x0020000000000002L});
-    public static final BitSet FOLLOW_53_in_expr_list1205 = new BitSet(new long[]{0x0008404482420000L});
-    public static final BitSet FOLLOW_expr_in_expr_list1208 = new BitSet(new long[]{0x0020000000000002L});
 
 }

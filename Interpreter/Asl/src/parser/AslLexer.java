@@ -1,4 +1,4 @@
-// $ANTLR 3.4 /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g 2016-03-29 09:52:04
+// $ANTLR 3.4 /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g 2016-04-03 13:12:20
 
 package parser;
 
@@ -76,15 +76,15 @@ public class AslLexer extends Lexer {
     public AslLexer(CharStream input, RecognizerSharedState state) {
         super(input,state);
     }
-    public String getGrammarFileName() { return "/home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g"; }
+    public String getGrammarFileName() { return "/home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g"; }
 
     // $ANTLR start "T__50"
     public final void mT__50() throws RecognitionException {
         try {
             int _type = T__50;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:6:7: ( '&' )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:6:9: '&'
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:6:7: ( '&' )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:6:9: '&'
             {
             match('&'); 
 
@@ -104,8 +104,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__51;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:7:7: ( '(' )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:7:9: '('
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:7:7: ( '(' )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:7:9: '('
             {
             match('('); 
 
@@ -125,8 +125,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__52;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:8:7: ( ')' )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:8:9: ')'
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:8:7: ( ')' )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:8:9: ')'
             {
             match(')'); 
 
@@ -146,8 +146,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__53;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:9:7: ( ',' )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:9:9: ','
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:9:7: ( ',' )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:9:9: ','
             {
             match(','); 
 
@@ -167,8 +167,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__54;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:10:7: ( ';' )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:10:9: ';'
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:10:7: ( ';' )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:10:9: ';'
             {
             match(';'); 
 
@@ -188,8 +188,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = EQUAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:167:7: ( '=' )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:167:9: '='
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:166:7: ( '=' )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:166:9: '='
             {
             match('='); 
 
@@ -209,8 +209,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = LCORCH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:168:8: ( '[' )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:168:10: '['
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:167:8: ( '[' )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:167:10: '['
             {
             match('['); 
 
@@ -230,8 +230,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = RCORCH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:169:8: ( ']' )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:169:10: ']'
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:168:8: ( ']' )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:168:10: ']'
             {
             match(']'); 
 
@@ -251,8 +251,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = NOT_EQUAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:170:10: ( '!=' )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:170:12: '!='
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:169:10: ( '!=' )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:169:12: '!='
             {
             match("!="); 
 
@@ -274,8 +274,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = LT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:171:8: ( '<' )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:171:10: '<'
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:170:8: ( '<' )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:170:10: '<'
             {
             match('<'); 
 
@@ -295,8 +295,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = LE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:172:8: ( '<=' )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:172:10: '<='
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:171:8: ( '<=' )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:171:10: '<='
             {
             match("<="); 
 
@@ -318,8 +318,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = GT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:173:8: ( '>' )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:173:10: '>'
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:172:8: ( '>' )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:172:10: '>'
             {
             match('>'); 
 
@@ -339,8 +339,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = GE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:174:8: ( '>=' )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:174:10: '>='
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:173:8: ( '>=' )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:173:10: '>='
             {
             match(">="); 
 
@@ -362,8 +362,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = PLUS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:175:6: ( '+' )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:175:8: '+'
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:174:6: ( '+' )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:174:8: '+'
             {
             match('+'); 
 
@@ -383,8 +383,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = MINUS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:176:7: ( '-' )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:176:9: '-'
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:175:7: ( '-' )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:175:9: '-'
             {
             match('-'); 
 
@@ -404,8 +404,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = MUL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:177:9: ( '*' )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:177:11: '*'
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:176:9: ( '*' )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:176:11: '*'
             {
             match('*'); 
 
@@ -425,8 +425,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = DIV;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:178:9: ( '/' )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:178:11: '/'
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:177:9: ( '/' )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:177:11: '/'
             {
             match('/'); 
 
@@ -446,8 +446,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = MOD;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:179:9: ( '%' )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:179:11: '%'
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:178:9: ( '%' )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:178:11: '%'
             {
             match('%'); 
 
@@ -467,8 +467,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = NOT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:180:9: ( 'not' )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:180:11: 'not'
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:179:9: ( 'not' )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:179:11: 'not'
             {
             match("not"); 
 
@@ -490,8 +490,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = AND;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:181:9: ( 'and' )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:181:11: 'and'
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:180:9: ( 'and' )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:180:11: 'and'
             {
             match("and"); 
 
@@ -513,8 +513,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = OR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:182:8: ( 'or' )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:182:10: 'or'
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:181:8: ( 'or' )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:181:10: 'or'
             {
             match("or"); 
 
@@ -536,8 +536,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = IF;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:183:6: ( 'if' )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:183:8: 'if'
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:182:6: ( 'if' )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:182:8: 'if'
             {
             match("if"); 
 
@@ -559,8 +559,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = THEN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:184:6: ( 'then' )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:184:8: 'then'
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:183:6: ( 'then' )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:183:8: 'then'
             {
             match("then"); 
 
@@ -582,8 +582,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = ELSE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:185:6: ( 'else' )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:185:8: 'else'
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:184:6: ( 'else' )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:184:8: 'else'
             {
             match("else"); 
 
@@ -605,8 +605,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = ENDIF;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:186:7: ( 'endif' )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:186:9: 'endif'
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:185:7: ( 'endif' )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:185:9: 'endif'
             {
             match("endif"); 
 
@@ -628,8 +628,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = WHILE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:187:7: ( 'while' )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:187:9: 'while'
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:186:7: ( 'while' )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:186:9: 'while'
             {
             match("while"); 
 
@@ -651,8 +651,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = DO;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:188:8: ( 'do' )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:188:10: 'do'
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:187:8: ( 'do' )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:187:10: 'do'
             {
             match("do"); 
 
@@ -674,8 +674,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = ENDWHILE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:189:9: ( 'endwhile' )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:189:11: 'endwhile'
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:188:9: ( 'endwhile' )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:188:11: 'endwhile'
             {
             match("endwhile"); 
 
@@ -697,8 +697,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = FUNC;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:190:6: ( 'func' )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:190:8: 'func'
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:189:6: ( 'func' )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:189:8: 'func'
             {
             match("func"); 
 
@@ -720,8 +720,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = ENDFUNC;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:191:9: ( 'endfunc' )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:191:11: 'endfunc'
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:190:9: ( 'endfunc' )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:190:11: 'endfunc'
             {
             match("endfunc"); 
 
@@ -743,8 +743,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = RETURN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:192:8: ( 'return' )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:192:10: 'return'
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:191:8: ( 'return' )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:191:10: 'return'
             {
             match("return"); 
 
@@ -766,8 +766,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = READ;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:193:6: ( 'read' )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:193:8: 'read'
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:192:6: ( 'read' )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:192:8: 'read'
             {
             match("read"); 
 
@@ -789,8 +789,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = WRITE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:194:7: ( 'write' )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:194:9: 'write'
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:193:7: ( 'write' )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:193:9: 'write'
             {
             match("write"); 
 
@@ -812,8 +812,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = TRUE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:195:9: ( 'true' )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:195:11: 'true'
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:194:9: ( 'true' )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:194:11: 'true'
             {
             match("true"); 
 
@@ -835,8 +835,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = FALSE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:196:9: ( 'false' )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:196:11: 'false'
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:195:9: ( 'false' )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:195:11: 'false'
             {
             match("false"); 
 
@@ -858,8 +858,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:197:6: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:197:8: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:196:6: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:196:8: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
             {
             if ( (input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
                 input.consume();
@@ -871,7 +871,7 @@ public class AslLexer extends Lexer {
             }
 
 
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:197:32: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:196:32: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
             loop1:
             do {
                 int alt1=2;
@@ -884,7 +884,7 @@ public class AslLexer extends Lexer {
 
                 switch (alt1) {
             	case 1 :
-            	    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:
+            	    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:
             	    {
             	    if ( (input.LA(1) >= '0' && input.LA(1) <= '9')||(input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
             	        input.consume();
@@ -921,10 +921,10 @@ public class AslLexer extends Lexer {
         try {
             int _type = INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:198:6: ( ( '0' .. '9' )+ )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:198:8: ( '0' .. '9' )+
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:197:6: ( ( '0' .. '9' )+ )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:197:8: ( '0' .. '9' )+
             {
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:198:8: ( '0' .. '9' )+
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:197:8: ( '0' .. '9' )+
             int cnt2=0;
             loop2:
             do {
@@ -938,7 +938,7 @@ public class AslLexer extends Lexer {
 
                 switch (alt2) {
             	case 1 :
-            	    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:
+            	    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:
             	    {
             	    if ( (input.LA(1) >= '0' && input.LA(1) <= '9') ) {
             	        input.consume();
@@ -979,7 +979,7 @@ public class AslLexer extends Lexer {
         try {
             int _type = COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:201:9: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' | '/*' ( options {greedy=false; } : . )* '*/' )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:200:9: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' | '/*' ( options {greedy=false; } : . )* '*/' )
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -1009,13 +1009,13 @@ public class AslLexer extends Lexer {
             }
             switch (alt6) {
                 case 1 :
-                    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:201:11: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
+                    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:200:11: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
                     {
                     match("//"); 
 
 
 
-                    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:201:16: (~ ( '\\n' | '\\r' ) )*
+                    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:200:16: (~ ( '\\n' | '\\r' ) )*
                     loop3:
                     do {
                         int alt3=2;
@@ -1028,7 +1028,7 @@ public class AslLexer extends Lexer {
 
                         switch (alt3) {
                     	case 1 :
-                    	    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:
+                    	    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:
                     	    {
                     	    if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '\t')||(input.LA(1) >= '\u000B' && input.LA(1) <= '\f')||(input.LA(1) >= '\u000E' && input.LA(1) <= '\uFFFF') ) {
                     	        input.consume();
@@ -1049,7 +1049,7 @@ public class AslLexer extends Lexer {
                     } while (true);
 
 
-                    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:201:30: ( '\\r' )?
+                    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:200:30: ( '\\r' )?
                     int alt4=2;
                     int LA4_0 = input.LA(1);
 
@@ -1058,7 +1058,7 @@ public class AslLexer extends Lexer {
                     }
                     switch (alt4) {
                         case 1 :
-                            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:201:30: '\\r'
+                            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:200:30: '\\r'
                             {
                             match('\r'); 
 
@@ -1075,13 +1075,13 @@ public class AslLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:202:8: '/*' ( options {greedy=false; } : . )* '*/'
+                    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:201:8: '/*' ( options {greedy=false; } : . )* '*/'
                     {
                     match("/*"); 
 
 
 
-                    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:202:13: ( options {greedy=false; } : . )*
+                    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:201:13: ( options {greedy=false; } : . )*
                     loop5:
                     do {
                         int alt5=2;
@@ -1106,7 +1106,7 @@ public class AslLexer extends Lexer {
 
                         switch (alt5) {
                     	case 1 :
-                    	    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:202:41: .
+                    	    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:201:41: .
                     	    {
                     	    matchAny(); 
 
@@ -1143,12 +1143,12 @@ public class AslLexer extends Lexer {
         try {
             int _type = STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:206:9: ( '\"' ( ESC_SEQ |~ ( '\\\\' | '\"' ) )* '\"' )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:206:12: '\"' ( ESC_SEQ |~ ( '\\\\' | '\"' ) )* '\"'
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:205:9: ( '\"' ( ESC_SEQ |~ ( '\\\\' | '\"' ) )* '\"' )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:205:12: '\"' ( ESC_SEQ |~ ( '\\\\' | '\"' ) )* '\"'
             {
             match('\"'); 
 
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:206:16: ( ESC_SEQ |~ ( '\\\\' | '\"' ) )*
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:205:16: ( ESC_SEQ |~ ( '\\\\' | '\"' ) )*
             loop7:
             do {
                 int alt7=3;
@@ -1164,7 +1164,7 @@ public class AslLexer extends Lexer {
 
                 switch (alt7) {
             	case 1 :
-            	    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:206:18: ESC_SEQ
+            	    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:205:18: ESC_SEQ
             	    {
             	    mESC_SEQ(); 
 
@@ -1172,7 +1172,7 @@ public class AslLexer extends Lexer {
             	    }
             	    break;
             	case 2 :
-            	    // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:206:28: ~ ( '\\\\' | '\"' )
+            	    // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:205:28: ~ ( '\\\\' | '\"' )
             	    {
             	    if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '!')||(input.LA(1) >= '#' && input.LA(1) <= '[')||(input.LA(1) >= ']' && input.LA(1) <= '\uFFFF') ) {
             	        input.consume();
@@ -1209,8 +1209,8 @@ public class AslLexer extends Lexer {
     // $ANTLR start "ESC_SEQ"
     public final void mESC_SEQ() throws RecognitionException {
         try {
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:212:5: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' ) )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:212:9: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:211:5: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' ) )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:211:9: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' )
             {
             match('\\'); 
 
@@ -1239,8 +1239,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:215:6: ( ( ' ' | '\\t' | '\\r' | '\\n' ) )
-            // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:215:8: ( ' ' | '\\t' | '\\r' | '\\n' )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:214:6: ( ( ' ' | '\\t' | '\\r' | '\\n' ) )
+            // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:214:8: ( ' ' | '\\t' | '\\r' | '\\n' )
             {
             if ( (input.LA(1) >= '\t' && input.LA(1) <= '\n')||input.LA(1)=='\r'||input.LA(1)==' ' ) {
                 input.consume();
@@ -1266,12 +1266,12 @@ public class AslLexer extends Lexer {
     // $ANTLR end "WS"
 
     public void mTokens() throws RecognitionException {
-        // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:8: ( T__50 | T__51 | T__52 | T__53 | T__54 | EQUAL | LCORCH | RCORCH | NOT_EQUAL | LT | LE | GT | GE | PLUS | MINUS | MUL | DIV | MOD | NOT | AND | OR | IF | THEN | ELSE | ENDIF | WHILE | DO | ENDWHILE | FUNC | ENDFUNC | RETURN | READ | WRITE | TRUE | FALSE | ID | INT | COMMENT | STRING | WS )
+        // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:8: ( T__50 | T__51 | T__52 | T__53 | T__54 | EQUAL | LCORCH | RCORCH | NOT_EQUAL | LT | LE | GT | GE | PLUS | MINUS | MUL | DIV | MOD | NOT | AND | OR | IF | THEN | ELSE | ENDIF | WHILE | DO | ENDWHILE | FUNC | ENDFUNC | RETURN | READ | WRITE | TRUE | FALSE | ID | INT | COMMENT | STRING | WS )
         int alt8=40;
         alt8 = dfa8.predict(input);
         switch (alt8) {
             case 1 :
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:10: T__50
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:10: T__50
                 {
                 mT__50(); 
 
@@ -1279,7 +1279,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 2 :
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:16: T__51
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:16: T__51
                 {
                 mT__51(); 
 
@@ -1287,7 +1287,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 3 :
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:22: T__52
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:22: T__52
                 {
                 mT__52(); 
 
@@ -1295,7 +1295,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 4 :
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:28: T__53
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:28: T__53
                 {
                 mT__53(); 
 
@@ -1303,7 +1303,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 5 :
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:34: T__54
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:34: T__54
                 {
                 mT__54(); 
 
@@ -1311,7 +1311,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 6 :
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:40: EQUAL
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:40: EQUAL
                 {
                 mEQUAL(); 
 
@@ -1319,7 +1319,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 7 :
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:46: LCORCH
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:46: LCORCH
                 {
                 mLCORCH(); 
 
@@ -1327,7 +1327,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 8 :
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:53: RCORCH
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:53: RCORCH
                 {
                 mRCORCH(); 
 
@@ -1335,7 +1335,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 9 :
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:60: NOT_EQUAL
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:60: NOT_EQUAL
                 {
                 mNOT_EQUAL(); 
 
@@ -1343,7 +1343,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 10 :
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:70: LT
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:70: LT
                 {
                 mLT(); 
 
@@ -1351,7 +1351,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 11 :
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:73: LE
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:73: LE
                 {
                 mLE(); 
 
@@ -1359,7 +1359,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 12 :
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:76: GT
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:76: GT
                 {
                 mGT(); 
 
@@ -1367,7 +1367,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 13 :
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:79: GE
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:79: GE
                 {
                 mGE(); 
 
@@ -1375,7 +1375,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 14 :
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:82: PLUS
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:82: PLUS
                 {
                 mPLUS(); 
 
@@ -1383,7 +1383,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 15 :
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:87: MINUS
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:87: MINUS
                 {
                 mMINUS(); 
 
@@ -1391,7 +1391,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 16 :
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:93: MUL
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:93: MUL
                 {
                 mMUL(); 
 
@@ -1399,7 +1399,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 17 :
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:97: DIV
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:97: DIV
                 {
                 mDIV(); 
 
@@ -1407,7 +1407,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 18 :
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:101: MOD
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:101: MOD
                 {
                 mMOD(); 
 
@@ -1415,7 +1415,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 19 :
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:105: NOT
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:105: NOT
                 {
                 mNOT(); 
 
@@ -1423,7 +1423,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 20 :
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:109: AND
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:109: AND
                 {
                 mAND(); 
 
@@ -1431,7 +1431,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 21 :
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:113: OR
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:113: OR
                 {
                 mOR(); 
 
@@ -1439,7 +1439,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 22 :
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:116: IF
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:116: IF
                 {
                 mIF(); 
 
@@ -1447,7 +1447,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 23 :
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:119: THEN
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:119: THEN
                 {
                 mTHEN(); 
 
@@ -1455,7 +1455,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 24 :
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:124: ELSE
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:124: ELSE
                 {
                 mELSE(); 
 
@@ -1463,7 +1463,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 25 :
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:129: ENDIF
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:129: ENDIF
                 {
                 mENDIF(); 
 
@@ -1471,7 +1471,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 26 :
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:135: WHILE
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:135: WHILE
                 {
                 mWHILE(); 
 
@@ -1479,7 +1479,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 27 :
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:141: DO
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:141: DO
                 {
                 mDO(); 
 
@@ -1487,7 +1487,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 28 :
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:144: ENDWHILE
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:144: ENDWHILE
                 {
                 mENDWHILE(); 
 
@@ -1495,7 +1495,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 29 :
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:153: FUNC
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:153: FUNC
                 {
                 mFUNC(); 
 
@@ -1503,7 +1503,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 30 :
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:158: ENDFUNC
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:158: ENDFUNC
                 {
                 mENDFUNC(); 
 
@@ -1511,7 +1511,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 31 :
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:166: RETURN
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:166: RETURN
                 {
                 mRETURN(); 
 
@@ -1519,7 +1519,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 32 :
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:173: READ
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:173: READ
                 {
                 mREAD(); 
 
@@ -1527,7 +1527,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 33 :
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:178: WRITE
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:178: WRITE
                 {
                 mWRITE(); 
 
@@ -1535,7 +1535,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 34 :
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:184: TRUE
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:184: TRUE
                 {
                 mTRUE(); 
 
@@ -1543,7 +1543,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 35 :
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:189: FALSE
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:189: FALSE
                 {
                 mFALSE(); 
 
@@ -1551,7 +1551,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 36 :
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:195: ID
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:195: ID
                 {
                 mID(); 
 
@@ -1559,7 +1559,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 37 :
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:198: INT
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:198: INT
                 {
                 mINT(); 
 
@@ -1567,7 +1567,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 38 :
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:202: COMMENT
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:202: COMMENT
                 {
                 mCOMMENT(); 
 
@@ -1575,7 +1575,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 39 :
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:210: STRING
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:210: STRING
                 {
                 mSTRING(); 
 
@@ -1583,7 +1583,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 40 :
-                // /home2/users/alumnes/1181926/dades/linux/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:217: WS
+                // /home/outer2g/Documentos/FIB/Q6/CL/Interpreter/Asl/src/parser/Asl.g:1:217: WS
                 {
                 mWS(); 
 

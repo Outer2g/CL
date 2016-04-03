@@ -58,12 +58,12 @@ public class Data {
 	arrayValues = new ArrayList<Integer>();
       if (type == 0 ){
 	this.type = Type.ARRAYINT;
-	for(int i = 0; i<position-1;++i) arrayValues.add(0);
+	for(int i = 0; i<position;++i) arrayValues.add(0);
 	arrayValues.add(v);
       }
       else {
 	this.type = Type.ARRAYBOOL;
-	for(int i = 0; i<position-1;++i) arrayValues.add(0);
+	for(int i = 0; i<position;++i) arrayValues.add(0);
 	arrayValues.add(v);
       }
     }
@@ -85,14 +85,14 @@ public class Data {
       if (type == Type.ARRAYINT){
 	if (position < arrayValues.size()) arrayValues.set(position,v);
 	else{
-	  for(int i = arrayValues.size()-1; i < position; ++i) arrayValues.add(0);
+	  for(int i = arrayValues.size(); i < position; ++i) arrayValues.add(0);
 	  arrayValues.add(v);
 	}
       }
       else{
 	arrayValues = new ArrayList<Integer>();
 	this.type = Type.ARRAYINT;
-	for(int i = 0; i < position-1; ++i) arrayValues.add(0);
+	for(int i = 0; i < position; ++i) arrayValues.add(0);
 	arrayValues.add(v);
       }
     }
@@ -100,7 +100,7 @@ public class Data {
       if (type != Type.ARRAYINT){
 	if (position<arrayValues.size()) arrayValues.set(position,v ? 1 : 0);
 	else{
-	  for(int i = arrayValues.size()-1;i<position;++i) arrayValues.add(0);
+	  for(int i = arrayValues.size();i<position;++i) arrayValues.add(0);
 	  arrayValues.add(v ? 1 : 0);
 	}
       }
@@ -108,9 +108,17 @@ public class Data {
 	arrayValues = new ArrayList<Integer>();
 	
 	this.type = Type.ARRAYBOOL;
-	for(int i = 0; i<position-1;++i) arrayValues.add(0);
+	for(int i = 0; i<position;++i) arrayValues.add(0);
 	arrayValues.add(v ? 1:0);
       }
+    }
+    public Integer getPosValueInteger(int position){
+        assert type == Type.ARRAYINT;
+        return arrayValues.get(position);
+    }
+    public Boolean getPosValueBoolean(int position){
+        assert type == Type.ARRAYBOOL;
+        return arrayValues.get(position) == 1;
     }
     
     /** Returns the type of data */

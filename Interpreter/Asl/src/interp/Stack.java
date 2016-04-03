@@ -95,6 +95,22 @@ public class Stack {
         if (d == null) CurrentAR.put(name, value); // New definition
         else d.setData(value); // Use the previous data 
     }
+    public void definePositionArray(String name, Data value, int position){
+        Data d = CurrentAR.get(name);
+        if (d == null){
+            Data newArray = null;
+            if (value.getType() == Data.Type.INTEGER)
+                newArray = new Data(position,value.getIntegerValue(),0);
+            else if (value.getType() == Data.Type.BOOLEAN)
+                newArray = new Data(position,value.getBooleanValue() ? 1 : 0,0);//b ? 1 : 0;
+            CurrentAR.put(name,newArray);
+        }
+        else{
+            if (value.getType() == Data.Type.INTEGER)
+                d.setPosValue(position,value.getIntegerValue());
+            else d.setPosValue(position,value.getBooleanValue());
+        }
+    }
 
     /** Gets the value of the variable. The value is represented as
      * a Data object. In this way, any modification of the object

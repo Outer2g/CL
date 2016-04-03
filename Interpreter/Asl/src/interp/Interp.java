@@ -217,7 +217,24 @@ public class Interp {
         }
         return null;
     }
-    
+
+    private void evaluateID(AslTree t,Data value){
+        assert  t != null;
+
+        setLineNumber(t);
+        switch (t.getType()){
+            case AslLexer.ID:
+                String name = t.getText();
+                Stack.defineVariable(name,value);
+                break;
+            case AslLexer.INDEX:
+                Integer index = evaluateExpression(t.getChild(1)).getIntegerValue();
+                String arrayName = t.getChild(0).getText();
+                Stack.definePositionArray(arrayName,value,index);
+                break;
+
+        }
+    }
     /**
      * Executes an instruction. 
      * Non-null results are only returned by "return" statements.
@@ -238,7 +255,7 @@ public class Interp {
             // Assignment
             case AslLexer.ASSIGN:
                 value = evaluateExpression(t.getChild(1));
-                Stack.defineVariable (t.getChild(0).getText(), value);
+                evaluateID(t.getChild(0),value);
                 return null;
 
             // If-then-else
@@ -321,14 +338,24 @@ public class Interp {
         int type = t.getType();
 
         Data value = null;
+        Integer index;
+        String arrayName;
+        Data array;
         // Atoms
         switch (type) {
             // A variable
             case AslLexer.ID:
                 value = new Data(Stack.getVariable(t.getText()));
                 break;
+            // An array
+            case AslLexer.INDEX:
+                index = evaluateExpression(t.getChild(1)).getIntegerValue();
+                arrayName = t.getChild(0).getText();
+                array = Stack.getVariable(arrayName);
+                if (array.getType() == Data.Type.ARRAYINT) value = new Data(array.getPosValueInteger(index));
+                else value = new Data(array.getPosValueBoolean(index));
+                break;
             // An integer literal
-            
             case AslLexer.INT:
                 value = new Data(t.getIntValue());
                 break;

@@ -13,4 +13,5 @@ func main()
   write "The factorial of "; write i;
   write " is: "; write factorial(i);
   write "%n"
+  i = n[i-1];
 endfunc

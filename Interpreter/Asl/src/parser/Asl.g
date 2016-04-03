@@ -44,7 +44,7 @@ tokens {
     BOOLEAN;    // Boolean atom (for Boolean constants "true" or "false")
     PVALUE;     // Parameter by value in the list of parameters
     PREF;       // Parameter by reference in the list of parameters
-    INDEX;	// Position to access
+    INDEX;	// Matrix
 }
 
 @header {
@@ -152,9 +152,8 @@ atom    :   mat
 //mat eq=EQUAL expr -> ^(ASSIGN[$eq,":="] mat expr)
 mat 	: ID | mat2
 		;
-mat2	: ID LCORCH expr RCORCH -> ^(INDEX ^(expr ID ID) ID) 
-		;
-
+mat2	: ID LCORCH expr RCORCH -> ^(INDEX ID expr) 
+		 ;
 // A function call has a lits of arguments in parenthesis (possibly empty)
 funcall :   ID '(' expr_list? ')' -> ^(FUNCALL ID ^(ARGLIST expr_list?))
         ;
